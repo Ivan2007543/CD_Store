@@ -1,12 +1,14 @@
+// En components/Hero.jsx
 export default function Hero() {
   return (
-    <header className="bg-gradient-to-b from-neutral-950 to-neutral-900 py-16 text-center border-b border-neutral-800">
-      <h2 className="text-4xl md:text-5xl font-black mb-3 tracking-tight text-white uppercase">
-        El templo del <span className="text-red-500">Formato Físico</span>
-      </h2>
-      <p className="text-neutral-400 text-sm md:text-base font-light tracking-wide max-w-md mx-auto">
+    // Asegúrate de usar w-full, px-4 para que respire en móvil y text-center
+    <div className="w-full bg-black text-center py-12 px-4">
+      <h1 className="text-3xl md:text-5xl font-black text-white uppercase mb-2">
+        El Templo del <span className="text-red-600">Formato Físico</span>
+      </h1>
+      <p className="text-xs md:text-sm text-neutral-400 max-w-md mx-auto">
         Colecciones exclusivas en CD y Vinilo. Sonido puro, arte real.
       </p>
-    </header>
+    </div>
   );
 }
