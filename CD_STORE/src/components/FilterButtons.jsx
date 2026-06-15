@@ -1,8 +1,9 @@
 export default function FilterButtons({ generoSeleccionado, setGeneroSeleccionado }) {
-  const generos = ['Todos', 'Rock', 'Pop', 'NuMetal', 'Emo', 'Alternativo', 'Punk']; // Lista de géneros disponibles
+  const generos = ['Todos', 'Rock', 'Pop', 'NuMetal', 'Emo', 'Alternativo', 'Punk'];
 
   return (
-    <div className="flex gap-3 mb-10 justify-center">
+    // Agregamos flex-wrap y un pequeño padding lateral
+    <div className="flex flex-wrap gap-3 mb-10 justify-center px-4">
       {generos.map(genero => (
         <button
           key={genero}
